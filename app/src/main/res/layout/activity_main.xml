@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.misk.amna.udacity_musicapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="429dp"
+        android:layout_height="589dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.7"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/nawal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/song1i"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="click1"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/song1t"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="22dp"
+                android:text="@string/song1"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/song2i"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="click2"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/song2t"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="22dp"
+                android:text="@string/song2"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/song3i"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="click3"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:id="@+id/song3t"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="22dp"
+                android:text="@string/song3"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
