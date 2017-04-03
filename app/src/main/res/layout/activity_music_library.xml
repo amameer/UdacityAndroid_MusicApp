@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.misk.amna.udacity_musicapp.Main2Activity">
+    tools:context="com.misk.amna.udacity_musicapp.MusicLibraryActivity">
 
 
     <LinearLayout
         android:layout_width="429dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:weightSum="7.7"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        android:weightSum="6.7"
         tools:layout_editor_absoluteY="3dp">
 
         <ImageView
@@ -27,8 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:weightSum="5"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="5">
 
             <ImageView
                 android:id="@+id/song1i"
@@ -54,9 +55,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:weightSum="5"
+            android:orientation="horizontal"
 
-            android:orientation="horizontal">
+            android:weightSum="5">
 
             <ImageView
                 android:id="@+id/song2i"
@@ -80,8 +81,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:weightSum="5"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="5">
 
             <ImageView
                 android:id="@+id/song3i"
@@ -100,6 +101,15 @@
                 android:text="@string/song3"
                 android:textSize="25sp" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="Select one of the music library to listen ,, press on play button on selected song" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
 

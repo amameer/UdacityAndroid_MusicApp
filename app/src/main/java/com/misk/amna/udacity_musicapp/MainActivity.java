@@ -1,5 +1,6 @@
 package com.misk.amna.udacity_musicapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         listenBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_main2);
+                Intent i = new Intent(v.getContext(), MusicLibraryActivity.class);
+                startActivity(i);
 
             }
         });

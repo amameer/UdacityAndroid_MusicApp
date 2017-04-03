@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Main2Activity"
+        <activity android:name=".MusicLibraryActivity"
             android:label="@string/Artist">
 
         </activity>
-        <activity android:name=".MusicActivity"
+        <activity android:name=".PlayMusicActivity"
             android:label="@string/SongDetails">
 
         </activity>
