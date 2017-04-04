@@ -30,9 +30,9 @@ public class PlayMusicActivity extends AppCompatActivity {
         String Length = i.getStringExtra("LengthKey");
         Boolean isPlaying; // to chech if music playing activity restarted with new music or resumed
 
-        songTxV = (TextView) findViewById(R.id.textView7);
-        LengthTxV = (TextView) findViewById(R.id.textView8);
-        PlayPause = (ImageView) findViewById(R.id.imageView5);
+        songTxV = (TextView) findViewById(R.id.songTxV);
+        LengthTxV = (TextView) findViewById(R.id.LengthTxV);
+        PlayPause = (ImageView) findViewById(R.id.PlayPause);
         songTxV.append(Song);
         LengthTxV.append(Length);
 
